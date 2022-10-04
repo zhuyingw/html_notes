@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="./css/styles.css">
+    <meta charset="UTF-8">
+    <title>CSS</title>
+</head>
+<body>
+    <h2 id="top">Basic Syntax</h2>
+    <p>
+        The Syntax of each declaration is as such:<strong>property:value pair</strong>.
+    </p>
+    <img src="./PIC/css_syntax.jpg">
+
+    <div>
+        We see that <strong><em>div</em></strong> is simply an empty container. It
+    is good practice to use other containers like <em>h1</em>,<em>p</em>, etc. However,
+    as we learn about CSS, div might come handy. 
+    </div>
+
+    <h2>Selector</h2>
+    <p>
+        Selectors simply refer to the HTML element to which CSS rules apply, they are what is 
+        being "selected" for the rule. There are many different kinds of selectors, the following 
+        is no the whole list:
+        <ul>
+            <li>Universal Selector</li>
+            <p>This selector will select elements of any type. Here is an example:</p>
+            <p>
+                *{color:purple;}
+            </p>
+
+            <li>Type Selector</li>
+            <p>This is applied to all elements of the selected type, such as </p>
+            <p>
+                div {
+                    color: purple;
+                }
+            </p>
+
+            <li>Class Selector <em>.alert-text</em></li>
+            <li>ID Selector <em>#title</em></li>
+                <p>
+                    The major difference between classes and IDs is that an element can <strong>only have one ID,</strong>
+                    an ID cannot be repeated on a single page, but class does not have to be unique and can be repeated.
+                </p>
+            <li>Grouping Selector <em>.read,.unread</em></li>
+            <li>Chaining Selector</li>
+            <li>Descendant Combinator</li>
+                <p>
+                    This is used for <em>nested classes.</em>
+                </p>
+        </ul>
+    </p>
+
+    <p>
+        <a href="https://www.theodinproject.com/lessons/foundations-css-foundations">Refer to this PAGE WHEN USING CSS or GOOGLE</a>
+    </p>
+
+    <h2>Some Properties of CSS</h2>
+        <p id="try1" style="color:coral; background-color:cornflowerblue">The playground of trying out different properties</p>
+        <p id="try2">We can change the font, font size, bold (font weight). Lastly, we can put this line in the center</p>
+        <p class="toRight">Or to the right</p>
+        <p>Let's play with some images and more:</p>
+        <img id="try3" src="./PIC/fun.jpg">
+
+
+    <h2>Ok, back to business</h2>
+    <p>
+        CSS can sometimes seem non-conform with the order, that can be because of the default styles 
+        of the browser - <strong>the concept of cascade</strong>.
+    </p>
+    <p>
+        The cascade is what determines which rules actually get applied to HTML. It also
+        follows some rules:
+        <ol>
+            <li>Specificity</li>
+            <p>ID selector > class selector > type selector</p>
+            <p>and when the selectors are the same, the tie-breaker is the <em>number</em>. The ones with
+            more amount wins the priority.</p>
+            <li>Inheritance</li>
+            <p>
+                Typography based properties (color, font-size, font-family, etc) are usually inherited,
+                while most other properties are not. But, as usual, we can override the Inheritance by directly
+                target at it. 
+            </p>
+            <li>Rule Order</li>
+            <p>
+                The tie-breaker of the tie-breaker is the order: <em>last defined</em> is the winner.
+            </p>
+        </ol>
+    </p>
+
+    <h2>Adding CSS to HTML</h2>
+    <p>
+        There are 3 ways of doing it: <strong>External CSS, Internal CSS </strong>, and <strong> Inline CSS</strong>.
+    </p>
+    <img class="csstohtml" src="./PIC/external.png">
+    <p>
+        <em>rel</em> attribute is required, and it specifies the relationship between the HTML file and the linked file.
+    </p>
+
+    <img class="csstohtml large" src="./PIC/inline.png">
+    <p>Pay careful attention as inline CSS will override the other two methods.</p>
+    
+    <h2>Other Resources</h2>
+    <ul>
+        <li>
+            <a href="https://www.w3schools.com/Css/css_font.asp"> CSS Fonts</a> 
+        </li>
+        <li>
+            <a href="https://www.w3schools.com/cssref/css_websafe_fonts.asp">CSS Web Safe Fonts</a>
+        </li>
+    </ul>
+
+    <p>
+        <a href="./index.html">Return to learn more <strong>HTML</strong></a>
+    </p>
+    <p>
+        <a href=#top>Return to Top</a>
+    </p>
+</body>
+
+</html>
