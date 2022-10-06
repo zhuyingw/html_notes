@@ -78,7 +78,12 @@
             <p>ID selector > class selector > type selector</p>
             <p>and when the selectors are the same, the tie-breaker is the <em>number</em>. The ones with
             more amount wins the priority.</p>
-            <li>Inheritance</li>
+            <p>In the example below, both rules are using ID and class selectors, so neither rule is using
+                 a more specific selector than the other. The cascade then checks the amount of each selector type.
+                Both rules only have one ID selector, but rule 2 has more class selector, so rule 2 has a higher specificity.</p>
+            <img style="width: 400px; height: auto;" src="./PIC/cascade_1.png">
+            <img style="width: 400px; height: auto;" src="./PIC/cascade_2.png">
+                <li>Inheritance</li>
             <p>
                 Typography based properties (color, font-size, font-family, etc) are usually inherited,
                 while most other properties are not. But, as usual, we can override the Inheritance by directly
