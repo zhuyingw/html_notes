@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styles.css">
+    <title>CSS2</title>
+</head>
+<body>
+    <h2 id="top">Welcome to the next level of <em>... drum roll ...</em> <strong>CSS</strong></h2>
+    <p>
+        So, the brave people, I will reward you with a <span style="font-size: 30px;">cool picture</span>:
+        <img style = "height: 600px; width:auto;" src="./PIC/cool.png">
+    </p>
+    <p>
+        This is an example of using Chrome Developer to inspect a website. We will record important 
+        shortcut here. If you wish to read more, please follow this <a href="https://developer.chrome.com/docs/devtools/">link</a>.
+    </p>
+    ps: The following list is all to Windows machine.
+    <ul>
+        <li>Open DevTools: 
+            <ul>
+                <li><strong>Elements panel:</strong> Control + Shift + C</li>
+                <li><strong>Console panel</strong>(for JavaScript): Control + Shift + J</li>
+            </ul>
+        </li>
+        <li>Open the last panel (you had open): Control + Shift + I</li>
+        <li>Open DevTools from Chrome's main menu: 3 dots -> More Tools -> Developer Tools</li>
+    </ul>
+
+    <img src="./PIC/funny.gif">
+    <h2>Box Model</h2>
+    <p class="box">
+        Basically, every single thing on a webpage is a rectangular box. If we stick a border to the following content,
+        we will get this:
+        <ul class="box">
+            <li> This is a box</li>
+        </ul>
+        <a class="box" href="./css2.html">To Nothing (is a box)</a>
+    </p>
+
+    <p>
+        There are many ways to manipulate the size of the boxes, space between them,
+        using <strong>padding, margin, border.</strong>
+        <ul>
+            <li><strong>padding:</strong> increases the space between the edge of a box and content inside</li>
+            <li><strong>margin:</strong> increases the space between a box and other boxes that sit next to it</li>
+            <li><strong>border:</strong> adds space between the margin and the padding</li>
+        </ul>
+    </p>
+
+    <p>
+        We will do a small test here:
+        <div id="box1">This is a small test: <ol><li>I'm not sure if I will succeed!</li></ol></ul></div> <div id="box2">small</div>
+    </p>
+
+    <p><a href="./cssbasic.html">Go back to Basic</a></p>
+    <p><a href=#top>Return to Top</a></p>
+</body>
+</html>

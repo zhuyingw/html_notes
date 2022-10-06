@@ -25,3 +25,23 @@
     width: 500px;
 }
 
+button{
+    background-color: green;
+    color: white;
+    font-size: medium;
+    font-weight: 800;
+}
+
+
+/* ------------------css2.html---------------*/
+
+.box{
+    border: 2px solid cornflowerblue;
+}
+
+#box1,#box2{
+    border: 2px solid red;
+    padding: 20px;
+    margin: 45px;
+}
+
