@@ -52,7 +52,7 @@ button{
 
 
 
-/*-----------------example code---------------*/
+/*-----------------example code NO. 1---------------*/
 .example{
   border: 2px solid rebeccapurple;
   padding: .5em;
@@ -72,3 +72,5 @@ button{
 .block {
   display: block;
 }      
+
+/*-----------------example code NO. 2---------------*/
