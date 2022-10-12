@@ -49,3 +49,26 @@ button{
     font-size: 5px;
     font-style: italic;
 }
+
+
+
+/*-----------------example code---------------*/
+.example{
+  border: 2px solid rebeccapurple;
+  padding: .5em;
+}
+
+.block,
+.list{
+  border: 2px solid blue;
+  padding: .5em;
+}
+
+#list{
+  display: flex;
+  list-style: none;
+}
+
+.block {
+  display: block;
+}      
