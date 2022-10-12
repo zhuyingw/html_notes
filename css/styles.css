@@ -36,12 +36,16 @@ button{
 /* ------------------css2.html---------------*/
 
 .box{
-    border: 2px solid cornflowerblue;
+    border: 2px solid red;
 }
 
 #box1,#box2{
-    border: 2px solid red;
+    border: 20px solid rgb(115, 125, 198);
     padding: 20px;
     margin: 45px;
 }
 
+#ref{
+    font-size: 5px;
+    font-style: italic;
+}

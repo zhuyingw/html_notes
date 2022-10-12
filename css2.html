@@ -55,7 +55,72 @@
         <div id="box1">This is a small test: <ol><li>I'm not sure if I will succeed!</li></ol></ul></div> <div id="box2">small</div>
     </p>
 
+    <h2>Block and inline boxes</h2>
+    <p><a href="https://www.youtube.com/watch?v=rIO5326FgPE&ab_channel=WebDevSimplified">8 min on CSS - border, margin, padding</a></p>
+    <p>
+        Boxes have an <strong>inner display type</strong>and <strong>outer display type</strong>. In general, we can set various values for 
+        the display type using the key word - <em>display</em>, which can have various values. 
+    </p>
+
+    <h3>Outer display type</h3>
+    <p>
+        If a box has an outer display type of <strong>block</strong>, then:
+        <ul>
+            <em>This acts like a block picture in word documents</em>
+            <li>The box will break onto a new line</li>
+            <li>The width and height properties are respected</li>
+            <li>Padding, margin and border will cause other elements to be <strong>pushed away from the box</strong></li>
+            <li>The box will extend in the inline direction to fill the space available in its container. In most cases, the box
+                will become as wide as its container, filling up 100% of the space available. 
+            </li>
+        </ul>
+    </p>
+    <p>
+        #If a box has an outer display type of <strong>inline</strong>, then:
+        <ul>
+            <li>The box will not break onto a new line</li>
+            <li>The width and height properties will <strong>not apply</strong></li>
+            <li>Vertical padding, margin, and borders will apply and will cause other 
+                inline boxes to move away from the box
+            </li>
+        </ul>
+    </p>
+
+    <p>
+        Some elements are <strong>block</strong> vs. <strong>inline</strong>.
+        <ul>
+            <li>Block: <em>h1, p</em></li>
+            <li>Inline: <em>a, span, em, strong</em></li>
+        </ul>
+    </p>
+
+    <h3>Inner display type</h3>
+    <p>
+        The inner display type dictates how elements inside that box are laid out.
+    </p>
+    <p>
+        By default and without any other instruction, the elements inside a box are also 
+        behave as block or inline boxes.
+    </p>
+    <p>
+        You can change the inner display type for example by setting <em>display: flex;.</em> 
+        The element will still use the outer display type block but this changes the inner display type to <em>flex</em>. 
+        Any direct children of this box will become flex items and behave according to the <a href="./flexbox.html"><em>Flexbox</em></a> specification.
+    </p>
+
+    <h3>Examples of different display types</h3>
+
     <p><a href="./cssbasic.html">Go back to Basic</a></p>
     <p><a href=#top>Return to Top</a></p>
+
+
+    <h4>References</h4>
+    <p id="ref">
+        <ul>
+            <li>
+                <a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/The_box_model">The box model</a>
+            </li>
+        </ul>
+    </p>
 </body>
 </html>
