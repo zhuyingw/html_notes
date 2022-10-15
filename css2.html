@@ -123,23 +123,132 @@
     </ul>  
 
     <p><strong>Let's take a look at another EXAMPLE</strong></p>
-    <p>
+    <p id="p1">
         I am a paragraph. Some of the
-        <span>words</span> have been wrapped in a
-        <span>span element</span>.
+        <span id="sp1">words</span> have been wrapped in a
+        <span id="sp2">span element</span>.
     </p>     
-    <ul>
-      <li>Item One</li>
-      <li>Item Two</li>
-      <li>Item Three</li>
+    <ul class="lt" id="ul1">
+      <li class="item">Item One</li>
+      <li class="item">Item Two</li>
+      <li class="item">Item Three</li>
     </ul>
     <p class="inline">I am a paragraph. A short one.</p>
     <p class="inline">I am another paragraph. Also a short one.</p>
 
+    <ul>
+        <li><em>span</em> elements are inline by default and so do not force line breaks</li>
+        <li><em>ul</em> element that is set to <em>display: inline-flex</em> creates an inline box
+        containing some flex items</li>
+        <li>The two paragraphs are both set to <em>display: inline.</em> The inline flex container and paragraphs all run together 
+        on one line rather than breaking onto new lines.</li>
+    </ul>
+
+    <p>Some other options of <em>display</em> are, for example:</p>
+    <ul>
+        <li><em>display: inline</em></li>
+        <li><em>display: block</em></li>
+        <li><em>display: inline-flex</em></li>
+        <li><em>display: flex</em></li>
+    </ul>
+
+
+    <h3>What is the CSS box model?</h3>
+    <p>
+        There is a <em>standard</em> and <em>an alternate box </em>
+        model. By default, browsers use the standard box model.
+    </p>
+
+    <h4>Parts of a box</h4>
+    <p>
+        We have the following components:
+        <ul>
+            <li>
+                <strong>Content box:</strong> area where content is displayed;
+                size it using e.g. <em>inline-size, block-size, width & height.</em>
+            </li>
+            <li>
+                <strong>Padding box:</strong> white space around the content; size using <em>padding</em>
+            </li>
+            <li>
+                <strong>Border box:</strong> border wraps the content and any padding; size using <em>border</em>
+            </li>
+            <li>
+                <strong>Margin box:</strong> the outermost layer, wrapping the content, padding, and border; size using <em>margin</em>
+            </li>
+        </ul>
+
+        It's definitely easier to see through a picture, and here it is. <span id="cssbox"><img style="height: 200px;" src="PIC/css_box.png"></span>
+        And we can actually write around it...
+    </p>
+
+    <h4>Collapsing margins, Negative margins: Too much about CSS box and ways to play around</h4>
+    <p>
+        There are two many contents, a lot to cover. 
+        <strong><a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/The_box_model#examples_of_different_display_types"><span class="highlight">FOLLOW THE LINK!!!</span></a></strong>
+    </p>
+
+
+    <h3>auto and margin</h3>
+    <p>
+        Margins are set using lengths, percentages, or the keyword <em>auto</em> and can have negative values.
+        <span style="display:block;">.box {
+            margin: 0 3em 0 3em;
+          }
+        </span>
+          <span style="display:block;">margin accepts up to 4 values - margin-top; margin-right; margin-bottom; margin-left.</span>
+          Therefore, if fewer than 4 values are set, the missing values are assumed based on the ones that are defined. (It's usually symmetrical.)
+    </p>
+
+    <p>
+        A value of auto basically tells the browser to define the margin for you. In most cases, a value of auto will be 
+        equivalent to a value of 0 or else whatever space is available on that side of the element. Moreover, auto is also 
+        handy for horizontal centering. BUT, it does NOT work for vertical centering.
+    </p>
+
+    <p>
+        So, we can use CSS as the following - to have top bottom padding of 8px and left and right padding of 24px can be:
+        <div><strong>padding: 8px 24px;</strong></div> or having margin adjust to top and bottom 8px and left and right to center/align: 
+        <div><strong>margin: 0 auto;</strong></div>
+    </p>
 
 
 
+    <h3>Block vs Inline</h3>
+    <p>
+        <em>a</em>... Inline-block elements behave like inline elements, but with block-style padding and margin. Inline-block is 
+        a useful tool to know about, but in practice, <a href="./flexbox.html">flexbox</a> might be your best friend when trying to line up a bunch of boxes.
+    </p>
+
+    <h3>Divs and Spans</h3>
+    <p>
+        Divs and spans give no particular meaning to their content. They are generic boxes that can contain things.
+    </p>
+    <p>
+        Div is a block-level element by default. It is commonly used as a container element to group other elements.
+    </p>
+
+    <div class="introduction">
+        <h2>Introduction</h2>
+     </div>
+     
+     <div class="main-content">
+        <h2>Main Content</h2>
+     </div>
+     
+     <div class="contact-us">
+        <h2>Contact Us</h2>
+     </div>
+
+    <p>
+        Span is an inline-level element by default. It can be used to group text and inline
+         HTML elements.
+    </p>
+
+
+    <p><a href="./flexbox.html">Flexbox Chapter</a></p>
     <p><a href="./cssbasic.html">Go back to Basic</a></p>
+    <a href="./index.html">Return to learn more <strong>HTML</strong></a>
     <p><a href=#top>Return to Top</a></p>
 
 
@@ -148,6 +257,15 @@
         <ul>
             <li>
                 <a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/The_box_model">The box model</a>
+            </li>
+            <li>
+                <a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Normal_Flow">Normal Flow</a>
+            </li>
+            <li>
+                <a href="https://www.w3schools.com/html/html_blocks.asp">HTML Block and Inline Elements</a>
+            </li>
+            <li>
+                <a href="https://www.digitalocean.com/community/tutorials/css-display-inline-vs-inline-block">Inline vs Inline-Block Display in CSS</a>
             </li>
         </ul>
     </p>

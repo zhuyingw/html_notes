@@ -74,3 +74,58 @@ button{
 }      
 
 /*-----------------example code NO. 2---------------*/
+
+#p1, #ul1 .lt, .inline{
+    border: 2px solid rebeccapurple;
+}
+
+#span1, #span2, .item{
+    border: 2px solid blue;
+}
+
+#ul1{
+    display: inline-flex;
+    list-style: none;
+    padding: 0;
+}
+
+.inline{
+    display: inline;
+}
+
+/*----------------------------------------------------*/
+#cssbox{
+    margin: 20px;
+    padding: 20px;
+    background-color: lightblue;
+    border: 2px skyblue;
+    display: inline-block;
+
+}
+
+
+div{
+    padding: 30px;
+    text-align: center;
+    margin-bottom: 10px;
+    color: #EEEEEE;
+}
+
+.introduction{
+    background-color: #548CA8;
+}
+
+.main-content{
+    background-color: #476072;
+}
+
+.contact-us{
+    background-color: #334257;
+}
+
+
+.highlight{
+    background-color: yellow;
+}
+
+
