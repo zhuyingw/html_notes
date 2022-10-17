@@ -104,7 +104,7 @@ button{
 }
 
 
-div{
+.introduction, .main-content, .contact-us{
     padding: 30px;
     text-align: center;
     margin-bottom: 10px;

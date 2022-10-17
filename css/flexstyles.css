@@ -25,3 +25,45 @@ button:hover{
 #flexboxlink{
     color: white;
 }
+
+
+.flex-container{
+    display: flex;
+    border: 8px solid skyblue;
+}
+
+.flex-container div{
+    background: peachpuff;
+    border: 4px solid burlywood;
+    height: 50px;
+    flex: 1;
+}
+
+.flex-container .two{
+    flex:2;
+}
+
+
+#hint{
+    color: lightblue;
+    background-color: whitesmoke;
+}
+
+
+
+.flex-shrink{
+    display: flex;
+    border: 8px solid skyblue;
+}
+
+.flex-shrink div{
+    background: peachpuff;
+    border: 4px solid burlywood;
+    height: 50px;
+    width: 250px;
+    flex: 1 1 auto;
+}
+
+.flex-shrink .three{
+    flex-shrink:0;
+}

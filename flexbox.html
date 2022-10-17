@@ -37,10 +37,86 @@
 
 
     <h3>Growing and Shrinking</h3>
+    <p>
+        <span><em>flex</em></span> is a shorthand for 3 properties: <span>flex-grow</span>, <span>flex-shrink</span>, 
+        and <span>flex-basis</span>.
+    </p>
 
+    <img style="height: 300px; width: auto" src="./PIC/flexshort.png">
+    <p>
+        Therefore, the above css is actually a abbreviated version of 
+        <ul style="background-color: lightgoldenrodyellow;
+        color: darkred;
+        padding: 3px;">
+            <li>flex-grow: 1</li>
+            <li>flex-shrink: 1</li>
+            <li>flex-basis: 0</li>
+        </ul>
+        Or, we can label it as <span>flex: 1 1 0</span>.
+    </p> 
+
+    <h4>Flex-Grow</h4>
+    <p>
+        <span>flex-grow</span> expects a single number as its value, which is like the flex-item's "growing factor." 
+        When we applied <span>flex: 1</span>, we were telling every div to grow the same amount. If we instead said <span>flex: 2</span>
+         to only one of the divs, then that div <span id="hint">________use the example below ________</span>(grow to 2x of the others)
+    </p>
+
+    <div class="flex-container"> flex-container
+        <div class="one">one</div>
+        <div class="two">two</div>
+        <div class="three">three</div>
+    </div>
+
+
+    <h4>Flex-Shrink</h4>
+    <p>
+        This is similar to <span>flex-grow</span>, but it only works if the size of all flex items is larger than their parent container. 
+        This means if the above 3 div classes are say 100px, 100px, and 200px, and the flex-container is 300px, THEN, it needs to shrink to fit
+        the flex-container. 
+    </p>
+    <p>
+        Default shrink is 1, but we can also change that. 
+    </p>
+
+    <div class="flex-shrink"> flex-shrink
+        <div class="one">one</div>
+        <div class="two">two</div>
+        <div class="three">three</div>
+    </div>
+
+    <p>
+        One thing to note is that when the flex-container is big/wide enough, it does NOT need to shrink to fit, so it might not change.
+        Like the above example might not work if we put it on the full screen.
+    </p>
+
+    <h4>Flex-Basis</h4>
+    <p>
+        <span>flex-basis</span> sets the initial size of a flex item, which defaults to <span>0%</span>. The reason we set it to <span>auto</span> 
+        in the previous example is because when it's default (0), it will ignore the item's width and all would shrink evenly. Using <span>auto</span> 
+        as a flex-basis tells the item to check for a width declaration (<span>width: 250px</span>).
+    </p>
+
+    <p>*<span>flex: auto</span> == <span>flex: 1 1 auto</span></p>
+
+    <h4>Axes</h4>
+
+
+
+
+    
     <p><a href="./css2.html">CSS2</a></p>
     <p><a href="./cssbasic.html">Go back to Basic</a></p>
     <p><a href="./index.html">Return to learn more <strong>HTML</strong></a></p>
     <p><a href=#top>Return to Top</a></p>
+
+
+
+    <h5>References</h5>
+    <ul>
+        <li><a href="https://www.w3.org/TR/css-flexbox-1/#flex-common">W3C flex</a></li>
+        <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/flex">MDN Doc</a></li>
+        <li><a href="https://css-tricks.com/understanding-flex-grow-flex-shrink-and-flex-basis/">CSS Tricks</a></li>
+    </ul>
 </body>
 </html>
