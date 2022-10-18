@@ -99,12 +99,30 @@
 
     <p>*<span>flex: auto</span> == <span>flex: 1 1 auto</span></p>
 
-    <h4>Axes</h4>
+    <h3>Axes</h3>
+    <P>
+        Now, the good news and bad news is that flexbox can work either horizontally or vertically, with some changes depending on the direction.
+    </P>
 
+    <p>
+        The default direction is <span>flex-direction: row;</span>, but we can change to <span>flex-direction: column;</span>. Let's try for a bit...
+    </p>
 
+    <div class="flexcolumn">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
 
+    <p>
+        Another thing about the<span> flex-direction: column </span> is that we need to define a height for the flex item. Because if we don't, flex-basis 
+        is set to 0. And since we are <span>flex-direction: column</span>, <span>flex-basis</span> refers to <span>height</span> rather than <span>width</span>. 
+        And the empty div is by default 0, so it will fill up the height of the container -> they don't actually 
+        need to have any height at all. We can resolve by selling height to the flex-item or the flex-container.
+    </p>
 
-    
+    <h3>Alignment</h3>
+
     <p><a href="./css2.html">CSS2</a></p>
     <p><a href="./cssbasic.html">Go back to Basic</a></p>
     <p><a href="./index.html">Return to learn more <strong>HTML</strong></a></p>
@@ -118,5 +136,13 @@
         <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/flex">MDN Doc</a></li>
         <li><a href="https://css-tricks.com/understanding-flex-grow-flex-shrink-and-flex-basis/">CSS Tricks</a></li>
     </ul>
+
+    <p>#The following is not yet solved</p>
+    <img style="width:500px;"src="./PIC/flexsyntax.png">
+    <div class="flex-attempt">
+        <div class="flex-item" id="flex"> Flex box (click to toggle raw box)</div>
+        <div class="raw-item" id="raw"> I am the sad Raw box</div>
+    </div>
+
 </body>
 </html>
